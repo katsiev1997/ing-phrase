@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { sign } from "jsonwebtoken";
 import { cookies } from "next/headers";
-import { prisma } from "@/prisma/prisma-client";
+import { prisma } from "../../../../../prisma/prisma-client";
 
 export async function POST(req: Request) {
 	try {
